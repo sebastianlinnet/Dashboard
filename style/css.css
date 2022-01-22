@@ -1,0 +1,129 @@
+    body {
+        margin: 0;
+        background: #FEFEFA;
+    }
+
+/*a {
+    transition: ease-in-out 0.2s;
+}*/
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #06191D;
+    /*background-color: #123C69;*/
+/*    background-color: #44318D;*/   
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.navigation a {
+    display: block;
+    color: #f1f1f1;
+    padding: 16px;
+    text-decoration: none;
+}
+a {
+  color: #0366d6;
+}
+a:hover {
+    color: #808080;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto', sans-serif;
+    color: #1D1B26;
+}
+
+p, td, a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    color: #1D1B26 
+}
+
+div.container-body {
+    margin-left: 300px;
+    padding: 10px 16px;
+}
+
+@media screen and (max-width: 1000px) {
+    .navigation {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+    .navigation a {
+        float: left;
+    }
+    div.container-body {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navigation a {
+        text-align: center;
+        float: none;
+    }
+}
+
+    .canvas-container {
+        max-width: 400px;
+        height: auto;
+        padding: 0;
+        margin: auto;
+        display: block;
+    }
+
+    #myChart2 {
+        position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    }
+
+    .col-sm {
+        margin: 0.5em;
+        height: auto;
+        padding: 10px;
+        background: #FFFFFF;
+        border-radius: 3px;
+        box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
+        transition: ease-in-out 0.2s;
+    }
+
+    .col {
+        margin: 0.5em;
+        background: #FFFFFF;
+        border-radius: 3px;
+        height: auto;
+        padding: 10px;
+        box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
+        transition: ease-in-out 0.2s;
+    }
+
+    .wrapper {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    .col-sm:hover, .col:hover {
+        transform: scale(1.02);
+    }
+
+    .iframe-container {
+        position: relative;
+        max-width: 800px;
+        height: 600px;
+        margin: auto;
+    }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding-bottom: 1rem;
+        }
